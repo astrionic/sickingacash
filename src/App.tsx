@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Product } from './model';
 import ButtonComponent from './ButtonComponent';
 import TotalComponent from './TotalComponent';
-import BackgroundImage from "./assets/background.png";
 
 const AppComponent = styled.div`
   background-color: #000000;
@@ -22,16 +21,9 @@ const AppComponent = styled.div`
   padding: 0;
 `
 
-export interface BackgroundProps {
-    backgroundImage: string;
-}
-
-const ButtonContainer = styled.div<BackgroundProps>`
+const ButtonContainer = styled.div`
   flex: 2 1 auto;
-  background-image: url(${props => props.backgroundImage});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-color: #e26464;
 
   @media (orientation: landscape) {
     height: 100%;
@@ -75,7 +67,7 @@ function App() {
 
     return (
     <AppComponent>
-        <ButtonContainer backgroundImage={BackgroundImage}>
+        <ButtonContainer>
             <ButtonComponent
                 addProduct={addProduct}
                 selectedProducts={selectedProducts}

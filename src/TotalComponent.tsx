@@ -82,7 +82,7 @@ const ResetButton = styled.button`
     margin-bottom: 12px;
   }
   
-  background-color: #009fff;
+  background-color: #cd2f2f;
   color: white;
 `
 
