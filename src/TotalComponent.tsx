@@ -213,7 +213,7 @@ const TotalComponent = ({ selectedProducts, addProduct, removeProduct, resetProd
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM232 344V280H168c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H280v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" fill="#ffffff"/><circle cx="256" cy="256" r="256" fill-opacity="0.0" onClick={() => addProduct(product)}/></svg>
                             <Text>{product.name}</Text>
                         </div>
-                        <div style={{ display: 'grid', placeItems: 'center', gridTemplateColumns: '40px 40px'}}>
+                        <div style={{ display: 'grid', placeItems: 'center', gridTemplateColumns: '40px 60px'}}>
                             <Price>{product.price}.-</Price>
                             <Price bold={true}>{product.price * amount}.-</Price>
                         </div>
@@ -228,7 +228,7 @@ const TotalComponent = ({ selectedProducts, addProduct, removeProduct, resetProd
                             <Text/>
                             <Text>Depot {deposit}</Text>
                         </div>
-                        <div style={{ display: 'grid', placeItems: 'center', gridTemplateColumns: '40px 40px'}}>
+                        <div style={{ display: 'grid', placeItems: 'center', gridTemplateColumns: '40px 60px'}}>
                             <Price>{getDepositPrice(deposit)}.-</Price>
                             <Price bold={true}>{getTotalPriceForDeposit(deposit)}.-</Price>
                         </div>
