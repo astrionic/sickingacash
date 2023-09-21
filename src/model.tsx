@@ -69,6 +69,6 @@ export const allProducts: Product[] = [
     new Product("Wein", '#ffcfcf', ProductType.DRINK, 16, Deposit.NONE, AgeRestriction.SIXTEEN_PLUS),
     new Product("Burger", '#ffcfef',ProductType.FOOD, 12, Deposit.NONE, AgeRestriction.NONE),
     new Product("Wurst", '#ffcfef',ProductType.FOOD, 6, Deposit.NONE, AgeRestriction.NONE),
-    new Product("Pommes Frites", '#ffcfef',ProductType.FOOD, 12, Deposit.NONE, AgeRestriction.NONE),
+    new Product("Pommes Frites", '#ffcfef',ProductType.FOOD, 4, Deposit.NONE, AgeRestriction.NONE),
 ];
 
