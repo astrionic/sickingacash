@@ -237,6 +237,7 @@ const TotalComponent = ({ selectedProducts, addProduct, removeProduct, resetProd
                     ))
                 }
             </ProductList>
+            {/*
             <DepositBackContainer>
                 {[Deposit.CUP, Deposit.MUG, Deposit.BOTTLE].map(deposit => (
                     <Entry key={deposit}>
@@ -265,6 +266,7 @@ const TotalComponent = ({ selectedProducts, addProduct, removeProduct, resetProd
                     </div>
                 </Entry>
             </DepositBackContainer>
+            */}
             <TotalContainer>
                 <div>Total</div>
                 <div>{getTotalPrice()}.-</div>
